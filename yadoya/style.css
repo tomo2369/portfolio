@@ -1,0 +1,218 @@
+@charset "UTF-8";
+
+
+
+body {
+	font-family: "Kameron", "Noto Sans JP", sans-serif;
+}
+
+h1.midasi {
+	color: #135977;
+	text-align: center;
+}
+
+
+/* パンくず*/
+.bread ul {
+  display: flex; /* 子要素(li)を横一列に並べる */
+  list-style-type: none; /* リスト要素に表示されている"・"を非表示 */
+}
+
+.bread li a {
+  padding: 5px; /* リンク間の間隔を調整 */
+  color: #000000; /* リンクの文字色を調整 */
+  font-size: 16px; /* リンクの文字サイズを調整 */
+  text-decoration: none; /* リンクの下線を非表示 */
+}
+
+.bread li a:hover {
+  background-color: #EEEEEE; /* カーソルをリンクの上に乗せたときの背景色 */
+}
+
+
+
+.bread li:last-child:after {
+  content: ""; /* 最後のliの後ろには区切り文字を表示しない */
+}
+
+
+
+.sousin {
+	text-align: center;
+}
+
+
+
+
+
+/* テキストの自動拡大を無効化 */
+body {
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
+/* ページ全体の設定 */
+body {
+	margin: 0;
+	
+	background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+/* 「コンテンツ」ブロック */
+.contents {
+	background-color: #e9ebec;
+	padding: 40px 15px;
+}
+.hidden{display: none;}
+/* 記事 */
+article {
+	background-color: #ffffff;
+	padding: 20px;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+p {
+	line-height: 2;
+}
+
+
+
+/* 「サイトについて」ページ */
+table {
+	border-collapse: collapse;
+}
+
+th, td {
+	border: solid 1px #cccccc;
+	padding: 18px;
+}
+
+th {
+	width: 4em;
+	text-align: left;
+	background-color: #135977;
+	color: #ffffff;
+}
+
+td {
+	background-color: #e8eef9;
+}
+
+div#top_igai_contents {
+    margin-top: 100px;
+}
+
+.bread{
+margin-top: 100px;
+}
+
+/* 「お問い合わせ」ページ */
+#top_igai_contents {
+    margin-top: 90px;
+}
+
+
+input, textarea {
+	width: 100%;
+	box-sizing: border-box;
+
+}
+
+textarea {
+	height: 120px;
+}
+
+input[type="submit"] {
+	background-color: #ffaa00;
+	border: none;
+	-webkit-appearance: none;
+}
+
+
+article {
+    width: 68%;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+/* ==== PC版 ==== */
+@media (min-width: 600px) {
+
+/* PC版：コンテナ */
+.container {
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* PC版：「ヘッダー」ブロック内のコンテナ */
+header .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* PC版：記事 */
+article {
+	padding-left: 60px;
+	padding-right: 60px;
+
+		MARGIN-LEFT: auto;
+		MARGIN-RIGHT: auto;
+	
+}
+
+h1 {
+	font-size: 40px;
+}
+
+p {
+	font-size: 18px;
+}
+
+
+/* PC版：「お問い合わせ」ページ */
+input[type="submit"] {
+	width: 250px;
+}
+
+
+
+
+}
+/* ===== PC版の設定ここまで ===== */
+
+
+
+/* ==== PC版（大） ==== */
+@media (min-width: 1025px) {
+
+/* PC版（大）：コンテナ */
+.container {
+	max-width: 1100px;
+}
+
+/* PC版（大）：「コンテンツ」ブロック内のコンテナ */
+.contents .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+/* ===== PC版（大）の設定ここまで ===== */
+
+}
